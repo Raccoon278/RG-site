@@ -1,0 +1,67 @@
+main.film-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 40px;
+  padding: 40px 80px;
+}
+
+.film-card {
+  background: rgba(30, 30, 50, 0.85);
+  border: 2px solid #444;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  
+}
+.film-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+}
+
+.film-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.film-info {
+  padding: 20px;
+  color: white;
+}
+
+.watch-button {
+  margin-top: 10px;
+  display: inline-block;
+  background: #ff5c5c;
+  padding: 10px 24px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.watch-button:hover {
+  background: #e94560;
+}
+body {
+  background: linear-gradient(to right, #1f1f2f, #181824);
+  color: white;
+  padding-top: 80px;
+}
+.film-card.slide-left {
+  transform: translateX(-60px);
+}
+.film-card.slide-right {
+  transform: translateX(60px);
+}
+
+.film-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
