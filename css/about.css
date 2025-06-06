@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f0f0f0;
+  background: url('../img/japan_wallpapers.png') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+main {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.45);
+  margin: 100px auto;
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding-top: 115px;
+}
+
+.main__about--hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main__logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+.main__about--hero h1 {
+  font-size: 2.5rem;
+  margin: 20px 0 10px;
+}
+
+.main__about--hero p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.main__team, .main__contact, .main__thanks, .main__socials {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #aad3ff;
+  margin-bottom: 15px;
+}
+
+.main__team--list li {
+  margin: 8px 0;
+  font-weight: 500;
+}
+.main__contact a,
+.main__socials a {
+  color: #89c7ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.main__contact a:hover,
+.main__socials:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.main__socials a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+}
+
+.main__logo {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+header {
+  position: fixed;
+}
